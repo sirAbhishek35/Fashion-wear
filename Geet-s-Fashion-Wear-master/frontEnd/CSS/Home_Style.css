@@ -1,0 +1,88 @@
+
+/*----------------------- Nav Bar ---------------------------*/
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    .nav_menu{
+        position:fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--gray-color);
+        transition: 0.5s ;
+    }
+}
+.nav_item{
+    margin-bottom: var(--mb-4);
+}
+.nav_link{
+    color: var(--dark-border-color);
+    font-weight: var(--font-semi);
+}
+.nav_link:hover{
+    color: var(--aqua-color);
+}
+#kurta_logo{
+    max-width: 2em;
+}
+
+.nav_cart{
+    font-size: 1.5rem;
+    margin-right: var(--mb-2);
+    cursor: pointer;
+}
+.nav_toggle{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*------------- show Menu --------------------------------------*/
+.show{
+    right: 0;
+    box-shadow: -12px 36px 50px -3px rgb(0 0 0 / 80%);
+}
+.active{
+    color: var(--aqua-color);
+}
+
+
+/*==================== FOOTER ===================*/
+
+
+/*==================== Media Quries ==========================*/
+@media screen and (min-width : 768px){
+    .nav{
+        height: calc(var(--header-height) + 1rem);
+        justify-content: initial;
+    }
+    .nav_menu{
+        margin-left: auto;
+    }
+    .nav_list{
+        display: flex;
+    }
+    .nav_item{
+        margin-left: var(--mb-4);
+        margin-bottom: 0;
+    }
+    .nav_toggle{
+        display: none;
+    }
+    
+
+}
+
+@media screen and (min-width:1024px){
+    .footer_title{
+        margin-top: 4px;
+    }
+}
+
+

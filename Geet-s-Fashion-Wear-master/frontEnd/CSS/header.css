@@ -1,0 +1,45 @@
+.First-header{
+    box-shadow: -2px 8px 50px -3px  rgba(0, 0, 0, 0.795);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--white-color);
+}
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo{
+    font-weight: var(--font-bold);
+}
+#kurta_logo{
+    max-width: 2em;
+}
+
+
+
+
+@media screen and (min-width:768px){
+    .nav{
+        height: calc(var(--header-height) + 1rem);
+        justify-content: initial;
+    }
+    .nav_menu{
+        margin-left: auto;
+    }
+    .nav_list{
+        display: flex;
+    }
+    .nav_item{
+        margin-left: var(--mb-4);
+        margin-bottom: 0;
+    }
+    .nav_toggle{
+        display: none;
+    }
+}
+

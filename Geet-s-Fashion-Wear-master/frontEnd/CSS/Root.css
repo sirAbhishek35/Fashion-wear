@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+/*-------------------------------------------------------*/
+
+/* Varible CSS */
+:root{
+    --header-height: 3rem;
+    --font-semi:600;
+    --font-bold:700;
+}
+/* Colores */
+:root{
+    --aqua-color : rgb(120,189,195);
+    --aqua-light-color : rgba(120, 189, 195, 0.61);
+    --aqua-dark-color : rgb(100, 160, 165);
+    --dark-border-color : rgb(1,44,61);
+    --white-color :rgb(255, 255, 255) ;
+    --black-color : rgb(0, 0, 0);
+    --gray-color : #F0F1F3 ;
+}
+/* TEXT settings  */
+:root{
+    --body-font : 'Open Sans', sans-serif;
+    --big-font-size : 3rem;
+    --h1-font-size : 1.5rem;
+    --h2-font-size : 1.25rem;
+    --normal-font-size : 0.938rem;
+    --small-font-size : 0.75rem;
+}
+@media screen and (min-width : 768px){
+    :root{
+        --body-font-size : 6rem;
+        --h1-font-size : 2.25rem;
+        --h2-font-size : 1.5rem;
+        --normal-font-size : 1rem;
+        --small-font-size : 0.813rem;
+    }
+}
+
+/*  margins */
+:root{
+    --mb-1 : 0.5rem;
+    --mb-2 : 1rem;
+    --mb-3 : 1.5rem;
+    --mb-4 : 2rem;
+}
+/* Z-Index */
+:root{
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*-------------------  Base -----------------------------*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 0 0;
+    font-family:var(--body-font) ;
+    font-size: var(--normal-font-size);
+    color: var(--dark-border-color);
+    line-height: 1.6;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:var(--dark-border-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*------------------------- class CSS --------------------*/
+.section{
+    padding: 3rem 0;
+}
+.section-title{
+    font-size: var(--h2-font-size);
+    color: var(--dark-border-color);
+    margin: var(--mb-4) 0 var(--mb-1);
+    text-align: center;
+}
+.section-all{
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    color: var(--dark-border-color);
+    text-align: center;
+    margin-bottom: var(--mb-2);
+}
+
+/*---------------------------- Layout ----------------------------------*/
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right:var(--mb-3) ;
+}
+/*------------------------ logo_line ----------------------*/
+.logo_line{
+    background: url(../Images/clothes-pattern-background.png) no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    height: 5rem;
+
+}
+.logo_line img{
+    max-width:16em;
+    padding: 6px 0px;
+}
+/*------------------- buttons --------------------*/
+
+.button{
+    border: none;
+    display:block;
+    background-color: var(--aqua-color);
+    color: var(--white-color);
+    padding: 0.6rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    transition: 0.3s;
+    width: 10em;
+    text-align: center;
+    line-height: 2rem;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:var(--aqua-dark-color);
+}
+.button-container{
+    float: right;
+}
+#Out_button{
+    text-decoration: line-through;
+    cursor: default;
+}
+
+
+/*==================== Media Quries ==========================*/
+@media screen and (min-width:768px){
+    body{
+        margin: 0;
+    }
+    .section-all{
+        margin-bottom: var(--mb-4);
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

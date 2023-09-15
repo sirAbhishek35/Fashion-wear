@@ -1,0 +1,53 @@
+
+
+
+/*----------------------- Nav Bar ---------------------------*/
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_cart{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.icons_nav{
+    font-size: 1.4rem;
+    margin: 1px 4px;
+}
+.icons_nav:hover{
+    color: var(--dark2-border-color);
+}
+.shop_title{
+    color: var(--dark-border-color);
+    margin: 0px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--font-semi);
+}
+
+
+
+
+
+/*==================== Media Quries ==========================*/
+@media screen and (min-width:768px){
+    .nav{
+        height: calc(var(--header-height) + 1rem);
+        justify-content: initial;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    
+    
+}
+
+
+
+
+
+
+
+
